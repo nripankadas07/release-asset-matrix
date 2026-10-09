@@ -1,0 +1,20 @@
+{
+  "repository": "demo/tool",
+  "tag": "v1.0.0",
+  "template": "tool-{tag}-{os}-{arch}.{ext}",
+  "cells": [
+    {
+      "os": "linux",
+      "arch": "amd64",
+      "ext": "tar.gz"
+    },
+    {
+      "os": "windows",
+      "arch": "arm64",
+      "ext": "zip"
+    }
+  ],
+  "min_size": 100,
+  "require_digest": true,
+  "allow_prerelease": false
+}

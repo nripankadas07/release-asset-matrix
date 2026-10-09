@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "release-asset-matrix"
+version = "0.1.0"
+description = "Captured GitHub release coverage checks for declared OS, architecture and archive-format matrices."
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+[project.scripts]
+release-asset-matrix = "release_asset_matrix:main"
+[project.urls]
+Repository = "https://github.com/nripankadas07/release-asset-matrix"
+Issues = "https://github.com/nripankadas07/release-asset-matrix/issues"
+[tool.setuptools]
+py-modules = ["release_asset_matrix"]

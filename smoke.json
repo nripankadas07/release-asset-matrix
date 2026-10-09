@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "release.json",
+      "contract.json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "bad-release.json",
+      "contract.json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "invalid.json",
+      "contract.json"
+    ],
+    "exit": 2
+  }
+]

@@ -1,0 +1,88 @@
+test_bool_size (test_contract.Tests.test_bool_size) ... ok
+test_collision (test_contract.Tests.test_collision) ... ok
+test_digest (test_contract.Tests.test_digest) ... ok
+test_duplicate_id (test_contract.Tests.test_duplicate_id) ... ok
+test_duplicate_name (test_contract.Tests.test_duplicate_name) ... ok
+test_metadata_only_digest (test_contract.Tests.test_metadata_only_digest) ... ok
+test_missing (test_contract.Tests.test_missing) ... ok
+test_prerelease (test_contract.Tests.test_prerelease) ... ok
+test_size (test_contract.Tests.test_size) ... ok
+test_state (test_contract.Tests.test_state) ... ok
+test_tag_draft (test_contract.Tests.test_tag_draft) ... ok
+test_template_injection (test_contract.Tests.test_template_injection) ... ok
+test_url_origin (test_contract.Tests.test_url_origin) ... ok
+test_url_query (test_contract.Tests.test_url_query) ... ok
+test_valid (test_contract.Tests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.002s
+
+OK
+{
+  "good": {
+    "repository": "demo/tool",
+    "tag": "v1.0.0",
+    "matrix": [
+      {
+        "os": "linux",
+        "arch": "amd64",
+        "ext": "tar.gz",
+        "name": "tool-v1.0.0-linux-amd64.tar.gz",
+        "covered": true
+      },
+      {
+        "os": "windows",
+        "arch": "arm64",
+        "ext": "zip",
+        "name": "tool-v1.0.0-windows-arm64.zip",
+        "covered": true
+      }
+    ],
+    "findings": [],
+    "extra_assets": []
+  },
+  "violation": {
+    "repository": "demo/tool",
+    "tag": "v1.0.0",
+    "matrix": [
+      {
+        "os": "linux",
+        "arch": "amd64",
+        "ext": "tar.gz",
+        "name": "tool-v1.0.0-linux-amd64.tar.gz",
+        "covered": true
+      },
+      {
+        "os": "windows",
+        "arch": "arm64",
+        "ext": "zip",
+        "name": "tool-v1.0.0-windows-arm64.zip",
+        "covered": false
+      }
+    ],
+    "findings": [
+      {
+        "code": "asset_count",
+        "name": "tool-v1.0.0-windows-arm64.zip",
+        "actual": 0
+      }
+    ],
+    "extra_assets": []
+  }
+}
+Processing /workspace/scratch/5d784ffbbfd3/launch-oct9/release-asset-matrix
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: release-asset-matrix
+  Building wheel for release-asset-matrix (pyproject.toml): started
+  Building wheel for release-asset-matrix (pyproject.toml): finished with status 'done'
+  Created wheel for release-asset-matrix: filename=release_asset_matrix-0.1.0-py3-none-any.whl size=5679 sha256=ac2c745035939e7ba5eae1ebfa104186a4a80e0a33ddb94fc86e4d31a45daa0c
+  Stored in directory: /root/.cache/pip/wheels/73/b5/9b/dd1dfe447f72c480fcc3b7f027fdf149fa972196df6c2c78aa
+Successfully built release-asset-matrix
+Installing collected packages: release-asset-matrix
+Successfully installed release-asset-matrix-0.1.0
+PASS: fresh package installation and installed CLI good/findings/invalid cases outside source
